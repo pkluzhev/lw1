@@ -1,146 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #f7f7f7;
-    margin: 0px;
 }
 
-header {
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.navigation {
+
+}
+
+.navigation__block {
     display: flex;
-    max-width: 940px;
-    margin: 0px auto;
     justify-content: space-between;
-    background-size: cover;
-    box-sizing: border-box;
     flex-wrap: wrap;
 }
 
-nav {
+.navigation__list {
     display: flex;
-    flex-wrap: wrap; 
-    padding: 0px;
-}
-
-.header-title-link {
-    font-family: Lora;
-    font-size: 26px;
-    text-decoration: none;
-    color: #2e2e2e;
-    margin: auto 0px auto 0px;
-    box-sizing: border-box;
-}
-
-.header-menu {
-    margin: 29px;
-    font-family: Oxygen;
-    font-size: 12px;
-    font-weight: normal;
-    display: flex;
-    list-style: none;
+    justify-content: center;
+    list-style-type: none;
     flex-wrap: wrap;
 }
 
-.header-link {
+.navigation__item {
+
+}
+
+.navigation__logo_header {
+    display: block;
+    padding: 20px 10px 28px 10px;
+    margin: 0;
+    font: 400 26px/26px Lora, sans-serif;    
+    letter-spacing: 0;
+    text-align: center;
+    color: #2E2E2E;
     text-decoration: none;
-    color: #2e2e2e;
-    margin: 10px 18px 10px 18px;
-    padding: 6px 2px 5px 1px;
 }
 
-
-
-.title-block {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 0px auto;
+.navigation__link_header {
+    display: block;
+    padding: 27px 21px;
+    margin: 0;
+    font: 400 12px/20px Oxygen, sans-serif;    
+    letter-spacing: 0;
+    text-align: center;
+    color: #2E2E2E;
+    text-decoration: none;
 }
 
-h1 {
-    font-family: Lora;
-    font-size: 50px;
-    font-weight: normal;
-    margin: 82px auto 20px auto;
+.banner {
+    
 }
 
-h2 {
-    font-family: Oxygen;
-    font-size: 17px;
-    font-weight: normal;
-    color: #2e2e2e;
+.banner__title {
+    display: block;
+    padding-top: 82px;
+    padding-bottom: 20px;
+    margin: 0;
+    font: 400 50px/51px Lora, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;
+}
+
+.banner__subtitle {
+    display: block;
+    padding-bottom: 113px;
+    margin: 0;
+    font: 400 17px/20px Oxygen, sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+    color: #2E2E2E;
     opacity: 63%;
-    margin: 0px auto 113px auto;
 }
 
 .main-img {
-    box-sizing: border-box;
     padding: 0;
-    margin: 0px auto 0px auto;
+    margin: 0 auto;
     border-radius: 3px;
     width: 100%;
 }
 
-.text-container {
-    box-sizing: border-box;
-    max-width: 960px;
-    padding: 140px 0px 135px 0px;
-    margin: 0px auto 0px auto;
-    flex-flow: column;
+.content {
+    padding-top: 140px;
+    padding-bottom: 135px;
 }
 
-.text {
-    margin: 0px;
-    padding: 0px 0px 35px 0px;
-    font-family: Oxygen;
-    font-size: 24px;
-    font-weight: normal;
-    color: #101315;
+.content__text {
+    display: block;
+    padding-bottom: 35px;
+    margin: 0;
+    font: 400 24px/35px Oxygen, sans-serif;
+    letter-spacing: 0;
+    text-align: left;
+    color: #101315;    
 }
 
 .footer {
-    margin: 0px;
-    display: flex;
-    justify-content: center;
     background-image: url(../images/footer.png);
     background-color: #4D565D;
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
-    flex-wrap: wrap;
 }
 
-.footer-container {
-    width: 960px;
-    display: flex;
-    flex-wrap: wrap; 
-    padding: 0px;
-    margin: 0px;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.footer-title-link {
-    font-family: Lora;
-    font-size: 26px;
-    font-weight: 300;
-    text-decoration: none;
+.navigation__logo_footer {
+    display: block;
+    padding: 31px 10px 32px 10px;
+    margin: 0;  
+    font: 400 26px/26px Lora, sans-serif;    
+    letter-spacing: 0;
+    text-align: center;
     color: #ffffff;
-    margin: auto 10px;
-    
+    text-decoration: none;
 }
 
-.footer-menu {
-    font: 11px Oxygen, sans-serif;
+.navigation__link_footer {
+    display: block;
+    padding: 31px 10px 32px 10px;
     margin: 0;
-    padding: 32px;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.footer-link {
-    text-decoration: none;
+    font: 400 11px/26px Oxygen, sans-serif;    
+    letter-spacing: 1px;
+    text-align: center;
     color: #ffffff;
+    text-decoration: none;
     opacity: 60%;
-    box-sizing: border-box;
-    padding: 20px 10px;
 }
