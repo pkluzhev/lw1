@@ -230,11 +230,15 @@ body {
     
 }
 
-.card__author-avatar_big {
+.card__author-avatar {
     vertical-align: middle;
     max-width: 26px;
     max-height: 26px;
-    margin-right: 10px
+    margin-right: 10px;
+}
+
+.card__author-avatar_big {
+    margin-left: 0;
 }
 
 .card__author-name {
@@ -321,10 +325,6 @@ body {
 }
 
 .card__author-avatar_small {
-    vertical-align: middle;
-    max-width: 26px;
-    max-height: 26px;
-    margin-right: 10px;
     margin-left: 13px;
 }
 
