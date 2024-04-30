@@ -1,0 +1,11 @@
+location /static/ {
+        rewrite ^/static/images/(.*)$ /images/$1 last;
+		rewrite ^/static/styles/(.*)$ /styles/$1 last;
+    }
+
+	
+	location / {
+        rewrite ^/home(.*)$ /home.php$1 last;
+		rewrite ^/post(.*)$ /post.php$1 last;
+		try_files $uri $uri.php;
+    }

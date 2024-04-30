@@ -1,97 +1,106 @@
 <?php
 
-function getModifier($className, $idSize) {
-    if ($idSize == true) {
+function getModifier($className, $idFeautured)
+{
+    if ($idFeautured == true) {
         $modifier = 'big';
     };
-    if ($idSize == false) {
+    if ($idFeautured == false) {
         $modifier = 'small';
     };
-    return $className . '_' . $modifier; 
+    return $className . '_' . $modifier;
 }
 
 $featuredPosts = [
     [
-        $idSize = true,
+        'id' => 1,
+        'is_feautured' => true,
         'image_url' => '/static/images/lights_post.png',
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
         'avatar_url' => '/static/images/matvogels.png',
         'author' => 'Mat Vogels',
-        'date' => 'September 25, 2015',
+        'time_stamp' => 1443207453,
         'sticker' => ''
     ],
     [
-        $idSize = true,
+        'id' => 2,
+       'is_feautured' => true,
         'image_url' => '/static/images/lanterns_post.png',
         'title' => 'From Top Down',
         'subtitle' => 'Once a year, go someplace you’ve never been before.',
         'avatar_url' => '/static/images/williamwong.png',
         'author' => 'William Wong',
-        'date' => 'September 25, 2015',
+        'time_stamp' => 1443207453,
         'sticker' => 'ADVENTURE'
     ],
 ];
 
 $mostRecent = [
     [
-        $idSize = false,
+        'id' => 3,
+       'is_feautured' => false,
         'image_url' => '/static/images/balloons_small.png',
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
         'avatar_url' => '/static/images/williamwong.png',
         'author' => 'William Wong',
-        'date' => '9/25/2015',
+        'time_stamp' => 1443207453,
         'sticker' => ''
     ],
     [
-        $idSize = false,
+        'id' => 4,
+       'is_feautured' => false,
         'image_url' => '/static/images/bridge_small.png',
         'title' => 'Sunny Side Up',
         'subtitle' => 'No place is ever as bad as they tell you it’s going to be.',
         'avatar_url' => '/static/images/matvogels.png',
         'author' => 'Mat Vogels',
-        'date' => '9/25/2015',
+        'time_stamp' => 1443207453,
         'sticker' => ''
     ],
     [
-        $idSize = false,
+        'id' => 5,
+       'is_feautured' => false,
         'image_url' => '/static/images/lake_small.png',
         'title' => 'Water Falls',
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
         'avatar_url' => '/static/images/matvogels.png',
         'author' => 'Mat Vogels',
-        'date' => '9/25/2015',
+        'time_stamp' => 1443207453,
         'sticker' => ''
     ],
     [
-        $idSize = false,
+        'id' => 6,
+       'is_feautured' => false,
         'image_url' => '/static/images/sea_small.png',
         'title' => 'Through the Mist',
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
         'avatar_url' => '/static/images/williamwong.png',
         'author' => 'William Wong',
-        'date' => '9/25/2015',
+        'time_stamp' => 1443207453,
         'sticker' => ''
     ],
     [
-        $idSize = false,
+        'id' => 7,
+       'is_feautured' => false,
         'image_url' => '/static/images/funic_small.png',
         'title' => 'Awaken Early',
         'subtitle' => 'Not all those who wander are lost.',
         'avatar_url' => '/static/images/matvogels.png',
         'author' => 'Mat Vogels',
-        'date' => '9/25/2015',
+        'time_stamp' => 1443207453,
         'sticker' => ''
     ],
     [
-        $idSize = false,
+        'id' => 8,
+       'is_feautured' => false,
         'image_url' => '/static/images/waterfall_small.png',
         'title' => 'Try it Always',
         'subtitle' => 'The world is a book, and those who do not travel read only one page.',
         'avatar_url' => '/static/images/matvogels.png',
         'author' => 'Mat Vogels',
-        'date' => '9/25/2015',
+        'time_stamp' => 1443207453,
         'sticker' => ''
     ],
 ];
@@ -115,9 +124,9 @@ $mostRecent = [
     <header class="header">
         <nav class="header__navigation navigation container">
             <div class="navigation__block">
-                <a class="navigation__logo_header" href="#">Escape.</a>
+                <a class="navigation__logo_header" href="/home">Escape.</a>
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link_header" href="#">HOME</a></li>
+                    <li class="navigation__item"><a class="navigation__link_header" href="/home">HOME</a></li>
                     <li class="navigation__item"><a class="navigation__link_header" href="#">CATEGORIES</a></li>
                     <li class="navigation__item"><a class="navigation__link_header" href="#">ABOUT</a></li>
                     <li class="navigation__item"><a class="navigation__link_header" href="#">CONTACT</a></li>
@@ -148,7 +157,7 @@ $mostRecent = [
             <div class="posts__title-block">
                 <h3 class="posts__title">Featured Posts</h3>
             </div>
-            <div class="posts__content">      
+            <div class="posts__content">
                 <?php
                 foreach ($featuredPosts as $post) {
                     include 'post_preview.php';
@@ -171,9 +180,9 @@ $mostRecent = [
     <footer class="footer">
         <nav class="footer__navigation navigation container">
             <div class="navigation__block">
-                <a class="navigation__logo_footer" href="#">Escape.</a>
+                <a class="navigation__logo_footer" href="/home">Escape.</a>
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link_footer" href="#">HOME</a></li>
+                    <li class="navigation__item"><a class="navigation__link_footer" href="/home">HOME</a></li>
                     <li class="navigation__item"><a class="navigation__link_footer" href="#">CATEGORIES</a></li>
                     <li class="navigation__item"><a class="navigation__link_footer" href="#">ABOUT</a></li>
                     <li class="navigation__item"><a class="navigation__link_footer" href="#">CONTACT</a></li>
