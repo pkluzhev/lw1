@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #F8F9FA;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 422px;
+}
+
+.avatar-block__image {
+    margin: 45px auto 0;
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+    background-image: url('../images/photo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.avatar-block__caption {
+    display: block;
+    margin-top: 9px;
+    font: 400 24px/36px Poppins, sans-serif;
+    text-align: center;
+    color: #000000;
+}
+
+.menu__navigation-list {
+    display: block;
+    margin: 36px auto 36px;
+    list-style-type: none;
+}
+
+.navigation__link {
+    display: block;
+    margin: 0 auto 50px;
+    font: 400 16px/28.8px Montserrat, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-image {
+    height: 800px;
+    object-fit: cover;
+}
+
+.content-block {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    padding: 90px 50px 30px 134px;
+}
+
+.title__greet {
+    display: block;
+    position: relative;
+    max-width: 654px;
+    z-index: 10;
+    font: 400 23px/43.2px Montserrat, sans-serif;
+    text-align: left;
+    color: #BFBFBF;
+}
+
+.title__shadow-name {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 66px;
+    left: 86px;
+    font: 700 68.87px/103px Poppins, sans-serif;
+    letter-spacing: 1.716666579246521px;
+    text-align: left;
+    color: #EDEDED;
+}
+
+.title__block {
+    max-width: 366px;
+}
+
+.title__main-title {
+    max-width: 654px;
+    font: 400 40px/60px Poppins, sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
+}
+
+.title__main-title_yellow {
+    color: #CCB78F;
+}
+
+.text-content {
+    display: block;
+    margin-top: 34px;
+    max-width: 654px;
+    font: 400 18px/32.4px Montserrat, sans-serif;
+    text-align: left;
+    color: #999999;
+}
+
+.caption {
+    display: block;
+    margin-top: 16px;
+    max-width: 654px;
+    font: 400 40px/60px Herr Von Muellerhoff, sans-serif;
+    text-align: left;
+    color: #000000CC;
+}
+
+@media screen and (max-width: 1920px) {
+    .main-container {
+        display: block;
+    }
+
+    .menu-block {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .main-image {
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        height: 1000px;
+        border-radius: 3px;
+        object-fit: cover;
+        object-position: center top;
+        width: 100%;
+    }
+
+    .menu__navigation-list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+
+    .navigation__link {
+        display: block;
+        margin: 7px 50px;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28.8px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .content-block {
+        display: block;
+        margin: 0 auto;
+        max-width: 720px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .main-image {
+        height: 700px;
+    }
+
+    .menu__navigation-block {
+        max-width: 920px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .menu__navigation-block {
+        max-width: 520px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-image {
+        height: 450px;
+    }
+
+    .title__shadow-name {
+        display: none;
+    }
+
+    .content-block {
+        padding: 45px 30px 30px;
+    }
+
+    .text-content {
+        font: 400 22px/45px Montserrat, sans-serif;
+    }
+
+    .menu__navigation-block {
+        max-width: 520px;
+    }
+}

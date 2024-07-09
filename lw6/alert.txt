@@ -1,0 +1,43 @@
+<h5 class="alert-banner">Email or password is incorrect.</h5>
+<img class="alert-img" src="/images/alert.png">
+
+.alert-banner{
+    display: block;
+    background: #FFEBEA;
+    height: 34px;
+    width: 354px;
+    margin-top: 41px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-left: 46px;
+    font: 400 14px/20px Oxygen, sans-serif;
+    text-align: left;
+    border-left: 2px solid #E86961;
+    border-radius: 5px;
+}
+
+.alert-img {
+    position: relative;
+    bottom: 34px;
+    left: 52px;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+//padding на email уменьшается на 24px
+
+
+<h6 class="alert-message">Incorrect email format. Correct format is ****@**.***</h6>
+
+.alert-message {
+    display: block;
+    height: 16px;
+    width: 354px;
+    margin-top: 5px;
+    margin-left: 40px;
+    font: 400 12px/16px Oxygen, sans-serif;
+    color:#E86961;
+    text-align: left;
+    border-radius: 5px;
+}
